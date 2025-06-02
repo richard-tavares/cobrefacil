@@ -1,0 +1,8 @@
+actor: ApiTester
+modules:
+  enabled:
+    - REST:
+        depends: PhpBrowser
+        url: http://cobrefacil-nginx-1/
+        shortDebugResponse: 300
+    - \Helper\Api
